@@ -9,12 +9,16 @@
 ![image](https://github.com/mycodereposit/kafka_test_for_ems/assets/126697725/71bff0c5-2f71-4184-ad14-0cb10bbb772a)
 3. run Producer.py and Consumer.py respectively
 # common error
+
 ## kafka zookeeper and server
+
 1. NodeExists
   - go to data/zookeeper and data/kafka then empties both folders and start running again.
 ## python kafka
 1. NoBrokersAvailable
   - start zookeeper and kafka server before running python kafka
+2. no module named 'kafka.vendor.six.moves'
+  - it is Python 3.12 compatibilty problem -> use lower version of Python
 ## java kafka
 1. org.slf4j can not be resolved
   - go to build.gradle right click -> gradle -> refresh gradle project and rerun build.gradle
